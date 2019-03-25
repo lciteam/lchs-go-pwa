@@ -1,0 +1,47 @@
+import { Period } from './enums';
+
+function toTime(hr: number, min: number) {
+  return (hr * 60) + min;
+}
+
+// Note: the script will only consider
+// the `arrival` paramater for now. (when each bus arrives).
+// When the program reads this fake ".csv", it will
+// give precedence to the period that is listed first.
+export const BusSchedule: any[] = [
+  { location: toLocation(JPL), arrival: toTime(7, 23)}
+  { location: toLocation(JPL), arrival: toTime(7, 34)}
+  { location: toLocation(JPL), arrival: toTime(7, 49)}
+  { location: toLocation(JPL), arrival: toTime(8, 09)}
+  { location: toLocation(JPL), arrival: toTime(8, 18)}
+  { location: toLocation(JPL), arrival: toTime(8, 35)}
+  { location: toLocation(JPL), arrival: toTime(9, 09)}
+  { location: toLocation(JPL), arrival: toTime(9, 28)}
+  { location: toLocation(JPL), arrival: toTime(9, 52)}
+  { location: toLocation(JPL), arrival: toTime(10, 09)}
+  { location: toLocation(JPL), arrival: toTime(10, 34)}
+  { location: toLocation(JPL), arrival: toTime(10, 45)}
+  { location: toLocation(JPL), arrival: toTime(11, 24)}
+  { location: toLocation(JPL), arrival: toTime(11, 36)}
+  { location: toLocation(JPL), arrival: toTime(12, 02)}
+  { location: toLocation(JPL), arrival: toTime(12, 17)}
+  { location: toLocation(JPL), arrival: toTime(12, 38)}
+  { location: toLocation(JPL), arrival: toTime(1, 00)}
+  { location: toLocation(JPL), arrival: toTime(1, 29)}
+  { location: toLocation(JPL), arrival: toTime(1, 45)}
+  { location: toLocation(JPL), arrival: toTime(2, 09)}
+  { location: toLocation(La Canada), arrival: toTime(2, 28)}
+  { location: toLocation(JPL), arrival: toTime(2, 36)}
+  { location: toLocation(JPL), arrival: toTime(2, 51)}
+  { location: toLocation(La Canada), arrival: toTime(3, 21)}
+  { location: toLocation(JPL), arrival: toTime(3, 28)}
+  { location: toLocation(JPL), arrival: toTime(3, 40)}
+  { location: toLocation(JPL), arrival: toTime(4, 13)}
+  { location: toLocation(JPL), arrival: toTime(4, 21)}
+  { location: toLocation(La Canada), arrival: toTime(4, 33)}
+  { location: toLocation(JPL), arrival: toTime(4, 56)}
+  { location: toLocation(JPL), arrival: toTime(5, 12)}
+  { location: toLocation(JPL), arrival: toTime(5, 50)}
+  { location: toLocation(JPL), arrival: toTime(6, 05)}
+  { location: toLocation(JPL), arrival: toTime(6, 16)}
+];
